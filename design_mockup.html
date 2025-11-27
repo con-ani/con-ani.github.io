@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Design Mockup</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@400;600&family=Noto+Sans+JP:wght@300;400;500&display=swap"
+    rel="stylesheet">
+  <style>
+    :root {
+      --primary: #6fc3c3;
+      --text: #4a4a4a;
+      --bg-warm: #f9f7f4;
+      --bg-white: #ffffff;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Noto Sans JP', sans-serif;
+      color: var(--text);
+      background-color: var(--bg-white);
+      overflow-x: hidden;
+    }
+
+    h1,
+    h2,
+    h3 {
+      font-family: 'Noto Serif JP', serif;
+    }
+
+    /* Hero Section */
+    .hero {
+      position: relative;
+      height: 90vh;
+      background: url('images/hero_new.png') no-repeat center center/cover;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .hero::after {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(255, 255, 255, 0.1);
+      /* Light overlay */
+    }
+
+    .hero__content {
+      position: relative;
+      z-index: 1;
+      text-align: center;
+      color: #fff;
+      text-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .hero__title-en {
+      display: block;
+      font-size: 1.5rem;
+      letter-spacing: 0.2em;
+      margin-bottom: 10px;
+      font-family: sans-serif;
+    }
+
+    .hero__title-jp {
+      display: block;
+      font-size: 3.5rem;
+      font-weight: 600;
+    }
+
+    /* About Section (The new design focus) */
+    .about {
+      position: relative;
+      padding: 120px 0;
+      background-color: var(--bg-warm);
+      overflow: hidden;
+    }
+
+    /* Organic Background Shape */
+    .about::before {
+      content: '';
+      position: absolute;
+      top: -10%;
+      right: -10%;
+      width: 60%;
+      height: 80%;
+      background: linear-gradient(135deg, #fff0f0 0%, #f0f8ff 100%);
+      border-radius: 40% 60% 70% 30% / 40% 50% 60% 50%;
+      opacity: 0.6;
+      z-index: 0;
+      filter: blur(60px);
+    }
+
+    .container {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 0 20px;
+      position: relative;
+      z-index: 1;
+    }
+
+    .about__header {
+      text-align: center;
+      margin-bottom: 80px;
+    }
+
+    .about__title-main {
+      font-size: 3rem;
+      color: var(--text);
+      margin-bottom: 30px;
+      line-height: 1.4;
+    }
+
+    .about__layout {
+      display: flex;
+      align-items: center;
+      gap: 60px;
+    }
+
+    .about__text {
+      flex: 1;
+      font-size: 1.05rem;
+      line-height: 2.2;
+    }
+
+    .about__image-wrapper {
+      flex: 1;
+      position: relative;
+    }
+
+    /* Organic Image Mask */
+    .about__image {
+      width: 100%;
+      height: auto;
+      border-radius: 63% 37% 30% 70% / 50% 45% 55% 50%;
+      box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.05);
+      transition: border-radius 5s ease-in-out;
+      object-fit: cover;
+      aspect-ratio: 1/1;
+    }
+
+    /* Decorative elements */
+    .decoration-circle {
+      position: absolute;
+      border-radius: 50%;
+      background: var(--primary);
+      opacity: 0.1;
+      z-index: -1;
+    }
+
+    .circle-1 {
+      width: 200px;
+      height: 200px;
+      bottom: -50px;
+      left: -50px;
+    }
+  </style>
+</head>
+
+<body>
+
+  <section class="hero">
+    <div class="hero__content">
+      <span class="hero__title-en">BE YOURSELF</span>
+      <span class="hero__title-jp">自分らしく、輝く。</span>
+    </div>
+  </section>
+
+  <section class="about">
+    <div class="container">
+      <div class="about__header">
+        <h2 class="about__title-main">もっと、ずっと、いきいきと。</h2>
+      </div>
+
+      <div class="about__layout">
+        <div class="about__text">
+          <p>忙しい毎日の中で、「自分のこと」は、<br>いつも後回しになっていませんか？</p>
+          <br>
+          <p>con-ani+は、そんなあなたがほっと一息つける、<br>もうひとつのお家のような場所。</p>
+          <br>
+          <p>お家に帰ってくるような、温かくて居心地のいい空間で、<br>ココロもカラダも、少しずつ整えていく。</p>
+          <br>
+          <p>理想の毎日を、自分の手でつかむために。<br>あなたらしい毎日を、ここから始めませんか？</p>
+        </div>
+        <div class="about__image-wrapper">
+          <img src="images/about_concept.png" alt="Concept" class="about__image">
+          <div class="decoration-circle circle-1"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</body>
+
+</html>

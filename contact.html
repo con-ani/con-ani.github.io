@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <!-- Google Tag Manager -->
+  <script>(function (w, d, s, l, i) {
+      w[l] = w[l] || []; w[l].push({
+        'gtm.start':
+          new Date().getTime(), event: 'gtm.js'
+      }); var f = d.getElementsByTagName(s)[0],
+        j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+          'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
+    })(window, document, 'script', 'dataLayer', 'GTM-KZXMHD9X');</script>
+  <!-- End Google Tag Manager -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact | con-ani+ 女性専用ジム</title>
+  <meta name="description" content="con-ani+へのお問い合わせ・無料体験のご予約。">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  <!-- Google Tag Manager (noscript) -->
+  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KZXMHD9X" height="0" width="0"
+      style="display:none;visibility:hidden"></iframe></noscript>
+  <!-- End Google Tag Manager (noscript) -->
+  <header class="header">
+    <div class="header__container">
+      <h1 class="header__logo"><a href="index.html">con-ani+</a></h1>
+      <div class="header__actions">
+        <a href="contact.html" class="header__cta">無料体験を予約</a>
+        <button class="header__menu-btn" aria-label="メニューを開く">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+      <nav class="header__nav">
+        <ul class="header__nav-list">
+          <li class="header__nav-item"><a href="index.html">HOME</a></li>
+          <li class="header__nav-item"><a href="service.html">Semi-Personal</a></li>
+          <li class="header__nav-item"><a href="about.html">Concept</a></li>
+          <li class="header__nav-item"><a href="index.html#features">Features</a></li>
+          <li class="header__nav-item"><a href="index.html#program">Program</a></li>
+          <li class="header__nav-item"><a href="voice.html">Voice</a></li>
+          <li class="header__nav-item"><a href="news.html">News</a></li>
+          <li class="header__nav-item"><a href="index.html#shop">Shop List</a></li>
+          <li class="header__nav-item"><a href="index.html#recruit">Recruit</a></li>
+          <li class="header__nav-item"><a href="contact.html" class="active">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <div class="page-header">
+      <h2 class="page-header__title">Contact</h2>
+      <p class="page-header__sub">お問い合わせ・無料体験予約</p>
+    </div>
+
+    <section class="section contact-form-section">
+      <div class="container">
+        <div class="form-container fade-in-up">
+          <div class="form-intro">
+            <p>無料体験のご予約、その他ご質問など<br>お気軽にお問い合わせください。</p>
+            <a href="tel:03-1234-5678" class="tel-link">03-1234-5678</a>
+            <p style="font-size: 0.8rem; color: #666;">受付時間：10:00 - 20:00</p>
+          </div>
+
+          <form id="reservationForm">
+            <div class="form-group">
+              <label for="name">お名前<span class="required">必須</span></label>
+              <input type="text" id="name" name="name" placeholder="例：山田 花子">
+              <p class="error-message">お名前を入力してください。</p>
+            </div>
+
+            <div class="form-group">
+              <label for="email">メールアドレス<span class="required">必須</span></label>
+              <input type="email" id="email" name="email" placeholder="例：hanako@example.com">
+              <p class="error-message">正しいメールアドレスを入力してください。</p>
+            </div>
+
+            <div class="form-group">
+              <label for="tel">電話番号<span class="required">必須</span></label>
+              <input type="tel" id="tel" name="tel" placeholder="例：090-1234-5678">
+              <p class="error-message">電話番号を入力してください。</p>
+            </div>
+
+            <div class="form-group">
+              <label for="type">お問い合わせ内容</label>
+              <select id="type" name="type">
+                <option value="trial">無料体験の予約</option>
+                <option value="question">ご質問・その他</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label for="message">メッセージ</label>
+              <textarea id="message" name="message" rows="5" placeholder="ご希望の日時やご質問をご記入ください。"></textarea>
+            </div>
+
+            <div class="form-group checkbox-group">
+              <label style="font-weight: normal; display: inline-block;">
+                <input type="checkbox" id="privacy" name="privacy">
+                <a href="#" style="text-decoration: underline;">プライバシーポリシー</a>に同意する
+              </label>
+              <p class="error-message" style="text-align: center;">プライバシーポリシーへの同意が必要です。</p>
+            </div>
+
+            <div class="form-submit">
+              <button type="submit" class="btn btn--primary form-btn">送信する</button>
+            </div>
+          </form>
+
+          <div id="formSuccess" class="form-success" style="display: none;">
+            <h3>送信完了</h3>
+            <p>お問い合わせありがとうございます。<br>担当者より折り返しご連絡させていただきます。</p>
+            <a href="index.html" class="btn btn--outline mt-4" style="margin-top: 20px;">トップページへ戻る</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer__container">
+      <div class="footer__logo">con-ani+</div>
+      <ul class="footer__links">
+        <li><a href="index.html">HOME</a></li>
+        <li><a href="news.html">News</a></li>
+        <li><a href="about.html">Concept</a></li>
+        <li><a href="service.html">Service</a></li>
+        <li><a href="voice.html">Voice</a></li>
+        <li><a href="access.html">Access</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+      <p class="footer__copyright">&copy; 2024 con-ani+ All Rights Reserved.</p>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+
+</html>
